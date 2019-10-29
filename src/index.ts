@@ -1,6 +1,6 @@
 import express, {Application, Request, Response, NextFunction} from 'express';
 
-const port = 5000;
+const port = 80;
 const __dirname = '.';
 import path from 'path';
 
