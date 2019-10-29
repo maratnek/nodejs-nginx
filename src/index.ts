@@ -11,8 +11,8 @@ const add = (a: number, b: number): number => a + b;
 app.get('/', (req: Request, res: Response, nexp: NextFunction) => {
     console.log(add(5,5));
     // res.sendFile('../index.html');
-    // res.sendFile('index.html', {root: __dirname});
-    res.send('HELLO');
+    res.sendFile('index.html', {root: __dirname});
+    // res.send('HELLO');
 });
 
 app.listen(port, ()=>{
