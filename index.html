@@ -30,22 +30,64 @@
     </header>
 
     <section>
-        <h3 class="card-panel teal lighten-2">Install node npm</h3>
-        <ul>
-            <li>sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -</li>
-            <li>sudo apt install nodejs</li>
-            <li>node --version</li>
-        </ul>
+        <h3 class="card-panel teal lighten-2">Create NodeJS project or use on GitHub</h3>
     </section>
-
-    <section>
-        <h3 class="card-panel teal lighten-2">Clone project from Github</h3>
+<section>
+    <h3 class="card-panel teal lighten-2">Clone project from Github</h3>
+    <ul>
+        <li>use AWS for the vps</li>
+        <li>Launch an EC2 instance</li>
+        <li>SSH for the local connect</li>
         <li>git clone this_project.git</li>
-    </section>
+    </ul>
+</section>
 
-    <section>
-        <h3 class="card-panel teal lighten-2">Third</h3>
-    </section>
+<section>
+    <h3 class="card-panel teal lighten-2">NodeJS & NPM & PM2</h3>
+    <ul>
+        <li>start install NodeJS
+            <ul>
+                <li>sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -</li>
+                <li>sudo apt install nodejs</li>
+                <li>node --version</li>
+            </ul>
+        </li>
+        <li>install pm2
+            <code>sudo npm i -g pm2</code>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h3 class="card-panel teal lighten-2">pm2 prepare</h3>
+    <ul>
+        <li>pm2 start index.js</li>
+        <li>pm2 status </li>
+        <li>pm2 flush</li>
+        <li>sudo pm2 startup ubuntu</li>
+        <li>sudo reboot</li>
+    </ul>
+</section>
+
+<section>
+    <h3 class="card-panel teal lighten-2">Ubuntu firewall</h3>
+    <ul>
+        <li>ufw status</li>
+        <li>ufw enable</li>
+        <li>sudo ufw allow ssh</li>
+        <li>sudo ufw allow http</li>
+        <li>sudo ufw allow https</li>
+    </ul>
+</section>
+
+<section>
+    <h3 class="card-panel teal lighten-2">Install NGinx</h3>
+    <span>Add reverse proxy</span>
+    <ul>
+        <li>sudo apt install nginx</li>
+        <li>add new group rules to AWS security groups</li>
+    </ul>
+</section>
 
 
     <!-- Compiled and minified JavaScript -->
